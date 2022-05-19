@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+    padding: auto;
+    max-width: 1000x;
+    min-width: 320px;
+    
+
+}
+.menuon{
+    display: none;
+}
+.top {
+    background-color: #FFF0F5;
+    color: #e0e0e0;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.top p {
+    margin-left: 230px;
+    color:	#1C1C1C;
+    opacity: 80%;
+    font-size: 15px;
+}
+.top p b{
+    font-size: 20px;
+}
+.top a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #ff4700;
+    opacity: 60%;
+    font-size: 18px;
+    padding-left: 15px; 
+    cursor: pointer;
+}
+.right button{
+    cursor: pointer;
+}
+
+.left {
+    position: fixed;
+    width: 200px;
+    padding-right: 0px;
+    box-shadow: 2px 1px 6px #DCDCDC;
+    height: 2000px;
+    
+    
+}
+
+.left header {
+    opacity: 70%;
+    background-image: linear-gradient(to top,#ff4700,#FF8C00 );
+    margin: auto;
+    padding: 0%;
+    border:.5px solid;
+    border-color: transparent;
+}
+.left h1 {
+    opacity: 90%;
+    color: #FFFf;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left li {
+    list-style: none;
+    display: block;
+    box-shadow: 2px 1px 2px #DCDCDC;
+    padding-right: 0%;
+    transition: .5s;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    cursor: pointer;
+
+}
+.left li:hover{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    border-bottom:solid #DCDCDC .5px;
+    background-color: #FFF0F5;
+    padding-top: 20px;
+    font-size: 14px;
+}
+.left a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:		#778899; 
+}
+.content{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 230px;
+    max-width: 1000px;
+    
+
+}
+.content h2{
+    color:#FF8C00;
+    opacity: 90%;
+}
+
+.side{
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.point{
+    display: block;
+    align-items: center;
+    width: 200px;
+    margin-right: 10px;
+    max-width: 700px;
+    height: 500px;
+    
+}  
+
+.point h4{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #DCDCDC .2px;
+    background-color:#FFF0F5 ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 5px;
+    margin-bottom: 0px;
+    opacity: 60%;
+    width: 120px;
+    
+    
+}
+.point p{
+    float:right;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #DCDCDC .2px;
+    margin-top: 0px;
+    width: 120px;
+    padding: 5px;
+    max-height:400px;
+    
+   
+   
+   
+}
+.point button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    float:right;
+    margin:10px 10px 0px 0px ;
+    color:white;
+    background-color: #f04d0c;
+    border-radius: 5px ;
+    border:none;
+    padding: 3px 5px;
+    transition: .5s;
+
+}
+.point button:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16.5px;
+    cursor: pointer;
+}
+.resume{
+    max-width: 1000px;
+    float: center;
+}
+.resume h3{
+    margin-left: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid #DCDCDC .2px;
+    background-color:#FFF0F5 ;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    opacity: 60%;
+}
+.resume p{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-left: 230px;
+    margin-right: 100px;
+    border: solid #DCDCDC .2px;
+}
+#mais {
+    display: none;
+}
+
+
+.resume button{
+    color: #ff4700;
+    border: none;
+    bottom: none;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 60%;
+    
+}
+.discussion{
+    align-items: center;
+    
+}
+.discussion h3{
+    margin-left: 230px;
+    border: solid #778899 .2px;
+    max-width: 660px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 60%;
+    background-color: #FFF0F5;
+    margin-bottom: 0%;
+    padding: 10px 0px 10px 5px;
+    
+}
+.discussion .enter{
+    margin-left: 230px;
+    border: #778899 solid .2px;
+    max-width: 660px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+
+}
+.enter button{
+    justify-content: space-between;
+    color: white;
+    background-color: #f04d0c;
+    opacity: 80%;
+    cursor: pointer;
+    float: center;
+   
+}
+.enter p{
+    color: #f04d0c;
+}
+
+footer img{
+    padding:230px}
+    #menu-hamburguer{
+        display: none;
+    }
+    .menu-ham{
+        display: none;
+    }
+@media screen and (max-width:970px){
+    .top{
+        visibility: hidden;
+        display: block;
+        
+    }
+   
+    .right{
+        max-height: 100px;
+        display: none;
+    }
+
+  
+    .rightside{
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .point{
+        float:left;
+        display: block;
+        
+    }
+    .resume{
+        display: block;
+        float: left;
+    }
+    .left{
+        visibility: hidden;
+    }
+    .content{
+        margin: 0;
+        display: block;
+        align-items: center;
+        padding-left: 30px;
+      
+    }
+ 
+    footer img{
+        float: right;
+    }
+    .discussion {
+        display: block;
+        float: left;
+        margin: auto;
+      
+    }
+    .right p{
+        margin-left: 0%;
+        display: block;
+        justify-content: space-between;
+        float: left;
+
+
+    }
+    .menu{
+        background: #fff0f5;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 25px;
+        left: 25px;
+        transition: .5s ease-in-out;
+    }
+    .hamburguer{
+        position: relative;
+        display: block;
+        background: black;
+        width: 30px;
+        height: 2px;
+        top: 29px;
+        left: 15px;
+        transition: .5s ease-in-out;
+    }
+    .hamburguer:before,
+    .hamburguer::after{
+        position: absolute;
+        background: black;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .5s ease-in-out;
+    }
+    .hamburguer::before{
+        top: -10px;
+    }
+    .hamburguer::after{
+        bottom: -10px;
+    }
+    #menu-hamburguer{
+        display: none;
+    }
+    input:checked ~ .menu-ham{
+        opacity: 100%;
+        transition: .50s;
+    }
+    input:checked ~ label .menu{
+        box-shadow: 0 0 0 100vw #fff0f5, 0 0 0 10vh #fff0f5;
+        transition: .5s ease-in-out;
+    
+    }
+    input:checked ~ label .hamburguer{
+        transform: rotate(45deg);
+       
+    }
+    input:checked ~ label .hamburguer:before{
+        transform: rotate(90deg);
+        top:0;
+    }
+    input:checked ~ label .hamburguer:after{
+        transform: rotate(90deg);
+        bottom:0;
+    }
+    .left ul{
+        position: absolute;
+    }
+    .menu-ham{
+        display: block;
+        position: absolute;
+        list-style: none;
+        opacity: 0;
+       
+       
+    }
+    
+    .menu-ham a{
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        font-family: monospace, Arial, Helvetica, sans-serif;
+        color: #c9c3c3;
+        cursor: pointer;
+        font-size: 20px;
+        transition: .5px
+        
+    }
+    .menu-ham a:hover {
+        transition: .5s;
+        text-decoration: underline;
+        font-size: 18px;
+       
+    }
+    input:checked ~ .content{
+        display: none;
+        transition: 10s;
+    }
+    input:checked ~ .point{
+        display: none;
+        transition: 10s;
+    }
+    input:checked ~ .resume{
+        display: none;
+        transition: 10s;
+    }
+    input:checked ~ .discussion{
+        display: none;
+        transition: 10s;
+    }
+
+
+.discussion {
+    max-width: 525px;
+    float: right;
+}
+.enter h3{
+    max-width: 225px;
+}
+
+
+.enter form{
+    max-width: 50px;
+    float: right;
+    margin-right: 450px;
+    column-span: 30;
+    
+    
+}
+#form{
+    display: flex;
+}
+}
+
+@media(max-width:670px){
+    iframe{
+        width: 450px;
+        height: 300px;
+
+    }
+    .resume{
+        float:left;
+
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>13 SLACA</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script type="text/javascript" src="javascript/style.js"></script>
+
+    </head>
+    <style>
+        form{
+            background-color: #fff0f5;
+            max-width: 500px;
+            width: 70%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%,-50%);
+        }
+        form h3{
+            text-align: center;
+            color: #aca4a4;
+            font-family: monospace, Arial, Helvetica, sans-serif;
+        }
+        form input[type=text],
+        form input[type=password]{
+            width: 100%;
+            height: 45px;
+            box-shadow: 1px 1px 3px;
+            padding-left: 5px;
+            margin: 10px 0;
+        }
+        form input[type=submit]{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #aca4a4;
+            color: white;
+            border-radius: 20px;
+            transition: 1s;
+        }
+        form input[type=submit]:hover{
+            background: #c9c3c3;
+        }
+        footer{
+            visibility: hidden;
+        }
+        #menu-hamburguer{
+            display: none;
+        }
+        .menu-ham{
+            display: none;
+        }
+        
+        @media screen and (max-width:970px){
+    .top {
+        visibility: hidden;
+    
+        
+    }
+    .menu{
+            background: #fff0f5;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            position: relative;
+            top: 25px;
+            left: 25px;
+            transition: .5s ease-in-out;
+        }
+        .hamburguer{
+            position: relative;
+            display: block;
+            background: black;
+            width: 30px;
+            height: 2px;
+            top: 29px;
+            left: 15px;
+            transition: .5s ease-in-out;
+        }
+        .hamburguer:before,
+        .hamburguer::after{
+            position: absolute;
+            background: black;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: .5s ease-in-out;
+        }
+        .hamburguer::before{
+            top: -10px;
+        }
+        .hamburguer::after{
+            bottom: -10px;
+        }
+        #menu-hamburguer{
+            display: none;
+        }
+        input:checked ~ .menu-ham{
+            opacity: 100%;
+            transition: .50s;
+        }
+        input:checked ~ label .menu{
+            box-shadow: 0 0 0 100vw #fff0f5, 0 0 0 10vh #fff0f5;
+            transition: .5s ease-in-out;
+        
+        }
+        input:checked ~ label .hamburguer{
+            transform: rotate(45deg);
+           
+        }
+        input:checked ~ label .hamburguer:before{
+            transform: rotate(90deg);
+            top:0;
+        }
+        input:checked ~ label .hamburguer:after{
+            transform: rotate(90deg);
+            bottom:0;
+        }
+        .left ul{
+            position: absolute;
+        }
+        .menu-ham{
+            display: block;
+            position: absolute;
+            list-style: none;
+            opacity: 0;
+           
+           
+        }
+        
+        .menu-ham a{
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-family: monospace, Arial, Helvetica, sans-serif;
+            color: #c9c3c3;
+            cursor: pointer;
+            font-size: 20px;
+            transition: .5px
+            
+        }
+        .menu-ham a:hover {
+            transition: .5px;
+            text-decoration: underline;
+            font-size: 18px;
+           
+        }
+    
+}
+@media screen and (max-width:570px){
+    footer{
+        visibility: visible;
+    }
+    .menu{
+        visibility: visible;
+    }
+}
+
+
+    </style>
+    <body>
+        <input id="menu-hamburguer" type="checkbox">
+        <label for="menu-hamburguer">
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        <ul class="menu-ham">
+            <li><a href="index.html">Apresentação</a></li>
+            <li><a href="index.html">Comitês</a></li>
+            <li><a href="index.html">Autores</a></li>
+            <li><a href="index.html">Eixos temáticos</a></li>
+            <li><a href="index.html">Trabalhos</a></li>
+            <li><a href="index.html">Contatos</a></li>
+        </ul>    
+
+        <aside class="left">
+            <header><h1>SLACA 2019</h1></header>
+            <center><img src="img/slaca13.png" alt="Imagem 13 SLACA" width="200px" height="200" /></center>
+            
+
+          
+            <ul>
+                <li><a href="index.html">Apresentação</a></li>
+                <li><a href="index.html">Comitês</a></li>
+                <li><a href="index.html">Autores</a></li>
+                <li><a href="index.html">Eixos temáticos</a></li>
+                <li><a href="index.html">Trabalhos</a></li>
+                <li><a href="index.html">Contatos</a></li>
+            </ul>
+            
+
+
+        </aside>
+        
+    
+        <header class="top">
+           
+            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos<br><b>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</b><br>ISSN: 1234-5678
+            </p>
+            
+            <aside class="right">
+                <button>PT-BR</button>
+                <a href="login.html">Login</a>
+    
+            </aside>
+        </header>
+        <form>
+            <h3>Fazer Login</h3>
+            <input type="text" name="email" placeholder="Seu e-mail..."/>
+            <input type="password" name="senha" placeholder="Sua senha..."/>
+            <input type="submit" name="acao" value="Enviar"/>
+        </form>
+
+        <header class="content">
+    
+
+        </header>
+
+       
+    </body>
+    <footer>
+        <img src="img/galoa.png" alt="Imagem Galoa"/>
+    </footer>
+</html>
